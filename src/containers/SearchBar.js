@@ -35,16 +35,19 @@ class SearchBar extends Component {
 
   render() {
     return (
-      <form onSubmit={this.onFormSubmit}>
-        <input
-          placeholder="Search for a movie"
-          value={this.state.term}
-          onChange={this.onInputChange}
-        />
-        <span>
-          <button type="submit">Submit</button>
-        </span>
-      </form>
+      <div class="row">
+        <h1>Movie Finder</h1>
+        <form onSubmit={this.onFormSubmit}>
+          <input
+            placeholder="Search for a movie"
+            value={this.state.term}
+            onChange={this.onInputChange}
+          />
+          <span>
+            <button type="submit">Submit</button>
+          </span>
+        </form>
+      </div>
     );
   }
 }
