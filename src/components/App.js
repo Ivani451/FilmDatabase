@@ -6,8 +6,12 @@ import "../../src/styles.css";
 class App extends Component {
   render() {
     return (
-      <div class="container">
-        <SearchBar />
+      <div className="container">
+        <span className="page-header">
+          <h1 className="navbar-brand">Movie Finder</h1>
+          <SearchBar />
+        </span>
+
         <MovieList />
       </div>
     );

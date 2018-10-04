@@ -1,0 +1,14 @@
+.navbar-brand {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+img {
+  width: 6rem;
+  height: 6rem;
+  margin: 3rem;
+}
+
+.page-header {
+  display: inline;
+}

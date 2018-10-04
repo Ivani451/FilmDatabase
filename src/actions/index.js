@@ -19,3 +19,6 @@ export function fetchMovies(movie) {
     payload: request
   };
 }
+
+// file path for images
+// https://image.tmdb.org/t/p/w500
