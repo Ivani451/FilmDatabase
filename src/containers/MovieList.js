@@ -4,14 +4,21 @@ import { connect } from "react-redux";
 class MovieList extends Component {
   renderMovies(movie) {
     return (
-      <div className="row">
-        <img
-          src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
-          alt=""
-        />
-        <div key={movie.id}> {movie.title}</div>
-
-        <p>{movie.overview}</p>
+      <div>
+        <div className="card" styles="width: 18rem;">
+          <img
+            class="card-img-top"
+            src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+            alt="Card image cap"
+          />
+          <div className="card-body">
+            <h5 class="card-title">{movie.title}</h5>
+            <p class="card-text">{movie.overview}</p>
+            <a href="#" class="btn btn-primary">
+              Go somewhere
+            </a>
+          </div>
+        </div>
       </div>
     );
   }
