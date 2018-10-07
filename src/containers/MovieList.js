@@ -5,13 +5,15 @@ class MovieList extends Component {
   renderMovies(movie) {
     return (
       <div>
-        <div className="card" styles="width: 18rem;">
+        <div className="card">
           <img
-            class="card-img-top"
+            className="card-img-top"
             src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
             alt="Card image cap"
+            height="180"
+            width="286"
           />
-          <div className="card-body">
+          <div className="card-body" width="700">
             <h5 class="card-title">{movie.title}</h5>
             <p class="card-text">{movie.overview}</p>
             <a href="#" class="btn btn-primary">
