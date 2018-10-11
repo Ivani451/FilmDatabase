@@ -31,19 +31,15 @@ class MovieList extends Component {
 }
 
 /*
-  We use an ES6 shortcut below. The code below is the equivalent to the following:
+  We use an ES6 shortcut (destructuring) below. The code below is the equivalent to the following:
   function mapStateToProps(state) {
     return { movies: state.movies };
   }
 
-  function mapStateToProps({ movies }) {
-  return { movies };
-}
-
 */
 
-function mapStateToProps(state) {
-  return { movies: state.movies };
+function mapStateToProps({ movies }) {
+  return { movies };
 }
 
 export default connect(mapStateToProps)(MovieList);
